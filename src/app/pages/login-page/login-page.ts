@@ -12,10 +12,8 @@ import { Router } from '@angular/router';
 export class LoginPage {
   // Modèle pour le formulaire :
   public credentials = { identifier: '', password: '' };
-  
   // Gestion de l'affichage de l'erreur :
   public errorMessage: string | null = null;
-
   constructor(
     private authService: AuthService,
     private router: Router
